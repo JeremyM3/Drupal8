@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains koob_natas.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function koob_natas_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the koob_natas module.
+    case 'help.page.koob_natas':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Devil Module for the website.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

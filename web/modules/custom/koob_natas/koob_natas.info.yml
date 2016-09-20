@@ -1,0 +1,7 @@
+name: NataS
+type: module
+description: My Awesome Devil Module for the website.
+core: 8.x
+package: Aston
+dependencies:
+  - node
