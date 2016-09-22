@@ -22,3 +22,15 @@ function koob_natas_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme();
+ */
+function koob_natas_theme($existing, $type, $theme, $patch) {
+
+  return [
+    'book_list' => [
+      'render element' => 'elements',
+    ]
+  ];
+}
